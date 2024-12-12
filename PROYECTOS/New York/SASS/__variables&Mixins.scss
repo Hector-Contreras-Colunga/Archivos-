@@ -1,0 +1,60 @@
+//VARIABLES
+$fontHeading:lato;
+$fontSizeHeadings:1.8rem;
+$imgSize:40%;
+
+//MIXING 
+/*CENTAR LAS IMAGENES*/
+@mixin centerImages () {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*SEPARAR LAS IMAGENES DEL MARGEN DE ARRIBA Y ABAJO*/
+@mixin separationImg() {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/*ESTILOS DE PARRAFO*/
+@mixin pStyle() {
+    text-align: justify;              
+    font-family: roboto;             
+    max-width: 70%;                  
+    font-size: 1.2rem;               
+    line-height: 1.7;               
+    word-spacing: 0.03em;           
+    margin: 1.5rem auto;           
+}
+
+
+/*ESTILO H2*/
+@mixin h2Style (){
+    font-family: sora;
+    font-size: 1.8rem;
+}
+/*ESTILO H3*/
+@mixin h3Style (){
+    text-align: center;
+    font-family: sora;
+    font-size: 1.6rem;
+}
+/*ESTILO IMAGENES*/
+@mixin imgStyle {
+    max-width: 24%;
+    border-radius: 2px;
+}
+/*FLEXBOX*/
+@mixin flexbox () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    gap: 1.2rem;
+}
+
+/*TRANSICION IMAGENES*/
+@mixin transicionImages () {
+    transition-duration: 0.3s;
+    transition-property:opacity,background-color,max-width, transform;
+    xxtransition-timing-function: ease-in-out;
+}

@@ -1,0 +1,10 @@
+.cabecera {
+  p {
+    @include pStyle();
+  }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .cabecera p {
+    max-width: 80%;
+  }
+}

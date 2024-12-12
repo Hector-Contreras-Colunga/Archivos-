@@ -1,0 +1,91 @@
+.historiaNY {
+    h2 {
+        color: white;
+        font-family: sora;
+        font-style: italic;
+        font-weight: bold;
+        margin-top: 2rem;
+        @include h2Style();
+    }
+    .img-1 {
+        max-width: 65%;
+        border-radius: 3px;
+    }
+    P {
+        @include pStyle();
+    }
+}
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        h2 {
+            font-size: 1.4rem;
+        }
+        .historiaNY .img-1{
+            max-width: 65%;
+            margin-top: 1rem;
+        }
+        .historiaNY p {
+            max-width: 80%;
+            margin-top:2rem;
+        }    
+
+        .accordionDates {
+            max-width: 80%;
+            margin: 3rem auto; /* Separación de las imágenes de arriba */
+            border: 5px solid #ffbe0b; /* Amarillo vibrante para el borde */
+            border-radius: 15px; /* Bordes más suaves */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra para mayor impacto visual */
+            padding: 1rem; /* Espacio interno */
+        }
+        
+        .accordion-item button {
+            color: #ffffff; /* Texto blanco para contraste */
+            font-weight: bold;
+            background-color: #ff4500; /* Naranja fuerte para los botones */
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease; /* Efecto de animación */
+            margin: 10px 0; /* Espaciado entre botones */
+        }
+        
+        .accordion-item button:hover {
+            background-color: #ff0000; /* Rojo más fuerte al pasar el cursor */
+            transform: scale(1.05); /* Ligero aumento al hacer hover */
+            cursor: pointer;
+        }
+        
+        .accordion-item p {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            font-family: 'Poppins', sans-serif;
+            background-color: #e0ff4f; /* Amarillo neón para el fondo del texto */
+            color: #333; /* Texto oscuro para legibilidad */
+            border-left: 8px solid #ff4500; /* Línea decorativa vibrante */
+            border-radius: 8px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        
+        h3 {
+            max-width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .buttonLink {
+            background-color: #e0ff4f;
+            display: block;
+            margin: 0 auto;
+            max-width: 40%;
+            color: black;
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            transition: .1s;
+            transition-timing-function: linear;
+            transition-property: background-color,color;
+            &:hover {
+                background-color: pink;
+                color: white;
+            }       
+        }
+    }
+
+    

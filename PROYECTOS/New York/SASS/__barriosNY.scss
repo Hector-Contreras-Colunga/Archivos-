@@ -1,0 +1,13 @@
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .barriosNY {
+    h2 {
+        margin-top: 3rem;
+        @include h3Style();
+        font-family: sora;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 2rem;
+        background-color: palevioletred !important;
+    }
+}
+}

@@ -1,0 +1,37 @@
+.nyEspecialSection {
+    h2 {
+        text-align: center;
+        margin-top: 3rem;
+        font-family: sora;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .img-1 {
+        margin-top: 1rem;
+        max-width: 65%;
+        @include centerImages();
+    }
+    p {
+        @include pStyle();
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .nyEspecialSection .img-1 {
+      max-width: 75%;
+    }
+    .nyEspecialSection p {
+        max-width: 75%;
+    }
+    .nyEspecialSection video {
+        max-width: 70%;
+        border-radius: 2.5px;
+        border-color: bisque !important;
+        border-width: 6px !important;
+    }
+    .nyEspecialSection h5 {
+        font-size: 1.6rem;
+        font-family: lato;
+        font-style: italic;
+    }
+}
+
